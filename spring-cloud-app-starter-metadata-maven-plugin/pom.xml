@@ -5,7 +5,7 @@
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-build</artifactId>
 		<version>2.3.1.RELEASE</version>
-		<relativePath />
+		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-app-starter-metadata-maven-plugin</artifactId>
     <version>2.0.3.BUILD-SNAPSHOT</version>
@@ -30,12 +30,12 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>${spring.version}</version>
+			<version>5.2.22.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>${spring.version}</version>
+			<version>5.2.22.RELEASE</version>
 		</dependency>
         <dependency>
             <groupId>org.yaml</groupId>
@@ -170,4 +170,33 @@
 			</pluginRepositories>
 		</profile>
 	</profiles>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc</artifactId>
+				<version>5.2.22.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-web</artifactId>
+				<version>5.2.22.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-expression</artifactId>
+				<version>5.2.22.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>5.2.22.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<version>5.2.22.RELEASE</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
